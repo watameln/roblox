@@ -114,4 +114,4 @@ end)
 
 --credits
 local cdt = win:Tab('Credit')
-cdt:Label('Made by Frostfuno')
+cdt:Label('Made by Frostfuno -  Co-owner watameln was here >:3')

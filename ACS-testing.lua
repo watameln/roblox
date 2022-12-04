@@ -19,16 +19,6 @@ cce.TintColor = Color3.new(0.121568, 0.403921, 0.078431)
 cce.Brightness = 2
 cce.Contrast = 2.5
 
-
---functions
-function getgun(name)
-    local args = {
-        [1] = name
-    }
-
-    game:GetService("ReplicatedStorage").InvVal:InvokeServer(unpack(args))
-end
-
 --window
 local win = ui:Create({
     Name = "ACS gun testing",
@@ -78,39 +68,6 @@ slf:Toggle('NVG', function()
         s.Enabled = false
     end
 end)
-
-
-
---weapon giver
-local wpn = win:Tab('Unlock tool')
-wpn:Button("Bloody Mary", function()
-    getgun("Bloody Mary")
-end)
-wpn:Button("H.T.G.", function()
-    getgun("H.T.G.")
-end)
-wpn:Button("Flashbang", function()
-    getgun("Flashbang")
-end)
-wpn:Button("Imposters Revenge", function()
-    getgun("Imposters Revenge")
-end)
-wpn:Button("M60", function()
-    getgun("M60")
-end)
-wpn:Button("M9", function()
-   getgun("M9")
-end)
-wpn:Button("Mod AK12", function()
-    getgun("Mod AK12")
-end)
-wpn:Button("Mod G3A3", function()
-    getgun("Mod G3A3")
-end)
-wpn:Button("Purple Void", function()
-    getgun("Purple Void")
-end)
-
 
 --credits
 local cdt = win:Tab('Credit')
